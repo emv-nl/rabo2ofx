@@ -547,7 +547,7 @@ class OfxWriter():
         if ARGS.outfile:
             self.filename = ARGS.outfile
         else:
-            self.filename = re.sub("\.[cC][sS][vV]$", ".ofx", ARGS.csvfile)
+            self.filename = re.sub(".[cC][sS][vV]$", ".ofx", ARGS.csvfile)
 
         # Check the Config
         if not isinstance(cfg, Cfg):
